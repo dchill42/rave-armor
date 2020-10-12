@@ -1,0 +1,8 @@
+User-Agent: Googlebot-Image
+Disallow: /images/materials
+
+User-Agent: Googlebot-Image
+Disallow: /images/brushed_alum_dk.jpg
+
+User-Agent: Googlebot-Image
+Disallow: /images/chain_bikini.png

@@ -1,0 +1,71 @@
+@import '../vars';
+
+@mixin gallery_size {
+  min-height: 1000px;
+  width: 1000px;
+}
+
+@mixin gallery_image {
+  @include gallery_size;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home__content {
+  h1 {
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .home__tagline {
+    color: $steel;
+    font-size: 30px;
+    font-family: $gothic;
+    margin: 20px 0 30px;
+    text-align: center;
+
+    .gothic {
+      //color: $iron;
+    }
+
+    .modern {
+      color: $fire;
+      font-family: $modern;
+      font-size: 26px;
+    }
+  }
+
+  .home__introduction {
+    background-color: $white-t33;
+    border: 1px solid $silver;
+    border-radius: 5px;
+    margin: 20px auto;
+    min-height: 400px;
+    padding: 10px;
+    width: 600px;
+  }
+
+  .gallery {
+    margin: 0 auto;
+    @include gallery_size;
+
+    .gallery__spikes {
+      @include gallery_image;
+      background-image: url(/images/ti_spike_mask.png);
+      background-position: 50px 50px;
+    }
+
+    .gallery__purple_rain {
+      @include gallery_image;
+      background-image: url(/images/purple_rain.png);
+      background-position: 75px 400px;
+    }
+
+    .gallery__mask_back {
+      @include gallery_image;
+      background-image: url(/images/mask_back.png);
+      background-position: 400px 400px;
+    }
+  }
+}

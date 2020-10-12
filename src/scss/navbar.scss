@@ -1,6 +1,23 @@
 @import '../vars';
 
+$navbar-vpad: 5px;
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 .navbar {
+  background-color: $iron;
+  background-image: url(/images/brushed_alum_dk.jpg);
+  border-bottom: $navbar-border solid $fire;
+  color: $fire;
+  display: flex;
+  flex-direction: row;
+  height: $navbar-height;
+
   a, a:link, a:visited, a:hover, a:active {
     color: $fire;
     display: contents;
@@ -8,8 +25,8 @@
   }
 
   .navbar__icon {
-    border-top: 3px solid transparent;
-    padding: 2px 20px 5px;
+    border-top: $navbar-border solid transparent;
+    padding: calc(#{$navbar-vpad} - #{$navbar-border}) 20px $navbar-vpad;
     opacity: 0.8;
     position: relative;
 
@@ -74,5 +91,9 @@
         color: $silver;
       }
     }
+  }
+
+  .navbar__spacer {
+    flex-grow: 1;
   }
 }

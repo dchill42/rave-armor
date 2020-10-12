@@ -5,6 +5,7 @@ $steel: #a2a3a7;
 $iron: #525355;
 $coal: #1e1e20;
 $gold: #eeb93e;
+$white-t33: rgba(255, 255, 255, 0.33);
 
 // Theme Fonts
 $plain: 'Philosopher', sans-serif;
@@ -16,3 +17,8 @@ $background: $coal;
 $foreground: $silver;
 $font: $plain;
 $title-font: $modern;
+
+// Navbar
+$navbar-height: 55px;
+$navbar-border: 3px;
+$navbar-size: calc(#{$navbar-height} + #{$navbar-border});

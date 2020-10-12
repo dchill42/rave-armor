@@ -1,19 +1,19 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   watch: false,
   mode: 'development',
   entry: {
-    'home': './src/home.js',
-    'masks': './src/masks.js',
-    'garments': './src/garments.js',
-    'about': './src/about.js',
-    'account': './src/account.js'
+    'navbar': './src/navbar/index.js',
+    'home': './src/home/index.js',
+    'masks': './src/masks/index.js',
+    'garments': './src/garments/index.js',
+    'about': './src/about/index.js',
+    'account': './src/account/index.js'
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public/js')
   },
   module: {
     rules: [
@@ -35,32 +35,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      chunks: ['home'],
-      filename: 'home.html',
-      template: 'src/template.html'
-    }),
-    new HtmlWebpackPlugin({
-      chunks: ['masks'],
-      filename: 'masks.html',
-      template: 'src/template.html'
-    }),
-    new HtmlWebpackPlugin({
-      chunks: ['garments'],
-      filename: 'garments.html',
-      template: 'src/template.html'
-    }),
-    new HtmlWebpackPlugin({
-      chunks: ['about'],
-      filename: 'about.html',
-      template: 'src/template.html'
-    }),
-    new HtmlWebpackPlugin({
-      chunks: ['account'],
-      filename: 'account.html',
-      template: 'src/template.html'
-    })
-  ]
+  }
 };

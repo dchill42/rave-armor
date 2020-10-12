@@ -6,3 +6,28 @@ body {
   font-family: $font;
   margin: 0;
 }
+
+#root {
+  margin-top: $navbar-size;
+  z-index: 1;
+}
+
+.site__title {
+  .rave {
+    color: $fire;
+    font-family: $modern;
+
+    &:after {
+      content: 'Rave';
+    }
+  }
+
+  .armor {
+    color: $steel;
+    font-family: $gothic;
+
+    &:after {
+      content: 'Armor';
+    }
+  }
+}

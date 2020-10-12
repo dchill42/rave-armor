@@ -4,8 +4,7 @@ import Cnames from 'classnames';
 import Icon from '@mdi/react';
 import * as Mdi from '@mdi/js';
 
-import Title from './title';
-import './navicon.scss';
+import Title from '../title';
 
 function NavIcon(props) {
   const classes = Cnames('navbar__icon', { 'navbar__icon-selected': props.href === props.selected });
