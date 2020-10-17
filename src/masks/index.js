@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 
 import './style.scss';
 
-ReactDOM.render(
-  (<div className='masks__content'>
-    <h1>Masks</h1>
-  </div>),
-  document.getElementById('root')
-);
+function Masks(params) {
+  return (
+    <div className='masks__content'>
+      <h1>Masks</h1>
+      <h2>Coming soon</h2>
+    </div>
+  );
+}
+
+ReactDOM.render(<Masks />, document.getElementById('root'));

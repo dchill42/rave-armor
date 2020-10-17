@@ -6,4 +6,25 @@
     text-align: center;
     font-family: $title-font;
   }
+
+  .about__bg {
+    background-image: url(/images/chain_bikini.jpg);
+    background-repeat: no-repeat;
+    background-position: 300px 0;
+    margin: 0 auto 50px;
+    min-height: 600px;
+    padding-top: 100px;
+    width: 1000px;
+  }
+
+  .about__info {
+    background-color: $black-t66;
+    border: 1px solid $silver;
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 0 25px;
+    text-align: center;
+    width: 600px;
+  }
 }

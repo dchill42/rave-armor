@@ -19,7 +19,4 @@ function Navbar(props) {
   );
 }
 
-ReactDOM.render(
-  <Navbar />,
-  document.getElementById('navbar')
-);
+ReactDOM.render(<Navbar />, document.getElementById('navbar'));
