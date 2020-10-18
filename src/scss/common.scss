@@ -16,6 +16,8 @@ body {
   .rave {
     color: $fire;
     font-family: $modern;
+    text-shadow: 2px 2px 0 $shadow;
+    -webkit-text-stroke: 1px $shadow;
 
     &:after {
       content: 'Rave';
@@ -25,6 +27,8 @@ body {
   .armor {
     color: $steel;
     font-family: $gothic;
+    text-shadow: 2px 2px 0 $shadow;
+    -webkit-text-stroke: 1px $shadow;
 
     &:after {
       content: 'Armor';

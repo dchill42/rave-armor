@@ -5,6 +5,7 @@ module.exports = {
   mode: 'development',
   entry: {
     'navbar': './src/navbar/index.js',
+    'footer': './src/footer/index.js',
     'home': './src/home/index.js',
     'masks': './src/masks/index.js',
     'garments': './src/garments/index.js',

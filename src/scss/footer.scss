@@ -1,0 +1,50 @@
+@import '../vars';
+
+#footer {}
+
+.footer {
+  background-color: $soot;
+  border-top: 3px solid $steel;
+  color: $fire;
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+
+  h4 {
+    color: $silver;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 10px 5px 0;
+  }
+
+  a, a:link, a:visited, a:hover, a:active {
+    color: $fire;
+  }
+
+  .footer__block {
+    padding: 10px 20px;
+  }
+
+  .footer__copy {
+    color: $iron;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__center {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .footer__links {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}

@@ -36,6 +36,11 @@ $navbar-vpad: 5px;
       width: 36px;
     }
 
+    &[title='Home'] svg {
+      filter: drop-shadow(2px 2px 0 $shadow);
+      -webkit-filter: drop-shadow(2px 2px 0 $shadow);
+    }
+
     .navbar__title {
       display: inline-block;
       font-size: 30px;
