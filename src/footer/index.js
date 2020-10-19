@@ -15,7 +15,7 @@ function Footer(props) {
       <div className='footer__block'>
         <h4>Navigate:</h4>
         <ul className='footer__links'>
-          <li><a href='/home/'>Home</a></li>
+          <li><a href='/'>Home</a></li>
           <li><a href='/masks/'>Masks</a></li>
           <li><a href='/garments/'>Garments</a></li>
           <li><a href='/about/'>About Us</a></li>
